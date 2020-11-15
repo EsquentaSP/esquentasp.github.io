@@ -1,15 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4Flags - Escola de idiomas</title>
 	<style>
-		h1 {
-			text-align: center;
-		}
-	</style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  overflow: hidden;
+}
+.vertical-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vertical-body {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.background {
+  background-size: cover;
+  animation: popup 2s;
+  background-color: #636262;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+  animation: blur 2s;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 0;
+  animation: popup 2s;
+  color: #FFF;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+.paragraph {
+  color: #FFF;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.contact-info {
+  color: #fbbf1f;
+}
+
+.title-unitys {
+  font-size: 1.4rem;
+  color: #FFF;
+}
+
+.contact-list-unity {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-unity {
+  box-shadow: 0px 0px 4px 0px;
+  margin-bottom: 20px;
+  /*flex-grow: 1;*/
+  width: 50%;
+  padding: 20px;
+  color: #fff;
+  transition: .5s;
+}
+
+.contact-unity:hover {
+  background: #fff;
+  color: #636262;
+}
+
+.contact-personal-class {
+  /*flex-grow: 3;*/
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 70px;
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(12px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+    </style>
 </head>
 <body>
-	<h1>Projeto esquenta SP</h1>
-	<hr>
+	<div class="vertical-container background" id="main">
+  <div class="vertical-body">
+    <div class="container">
+      <img src="http://4flags.com.br/teste/images/logo-4flags.svg">
+      
+      <h2 class="title">Em manutenção</h2>
+      <br>
+      <p class="paragraph">Estamos trabalhando para deixar o site muito melhor e mais rápido para vocês.</p>
+      
+      <p class="paragraph">Mas não deixe de entrar em contato com a gente</p>
+      
+      <br>
+      
+      <hr class="line-white">
+      
+      <br>
+      <div class="section-contact">
+         <ul class="contact-list">
+           <li class="contact">
+             <span class="contact-info">contato@4flags.com.br</span>
+           </li>
+           <li class="contact">
+             <span class="contact-info">rh@4flags.com.br</span>
+           </li>
+        </ul>
+      </div>
+      
+      <br><br>
+      <div class="section-contavt-unitys">
+         <h4 class="title-unitys">Unidades</h4>
+        
+         <br>
+        <ul class="contact-list-unity">
+              <li class="contact-unity">
+                <h4 class="contact-title">São Bernardo</h4>
+                  
+             <span class="contact-email">saobernardo@4flags.com.br</span>
+                <span class="contact-telephone">
+                  11 98912-1313
+                </span>
+           </li>
+           <li class="contact-unity">
+                <h4 class="contact-title">São Caetano do sul</h4>
+                  
+             <span class="">saocaetano@4flags.com.br</span>
+                <span class="contact-telephone">
+                 11 94343-5066
+                </span>
+           </li>
+                <li class="contact-unity contact-personal-class">
+                <h4 class="contact-title">Outras unidades</h4>
+        
+                <span class="contact-telephone">
+                  11 99869-6511
+                </span>
+           </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
