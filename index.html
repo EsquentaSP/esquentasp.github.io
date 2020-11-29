@@ -1,215 +1,1044 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>4Flags - Escola de idiomas</title>
-	<style>
-       * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  overflow: hidden;
-}
-.vertical-container {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.vertical-body {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.background {
-  background-size: cover;
-  animation: popup 2s;
-  background-color: #636262;
-}
-
-.container {
-  padding: 0 10px;
-  margin: 0 auto;
-  max-width: 960px;
-  text-align: center;
-  animation: blur 2s;
-}
-
-.title {
-  font-size: 40px;
-  margin-bottom: 0;
-  animation: popup 2s;
-  color: #FFF;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-span {
-  display: block;
-}
-
-.paragraph {
-  color: #FFF;
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.contact-info {
-  color: #fbbf1f;
-}
-
-.title-unitys {
-  font-size: 1.4rem;
-  color: #FFF;
-}
-
-.contact-list-unity {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-unity {
-  box-shadow: 0px 0px 4px 0px;
-  margin-bottom: 20px;
-  /*flex-grow: 1;*/
-  width: 50%;
-  padding: 20px;
-  color: #fff;
-  transition: .5s;
-}
-
-.contact-unity:hover {
-  background: #fff;
-  color: #636262;
-}
-
-.contact-personal-class {
-  /*flex-grow: 3;*/
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .title {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .title {
-    font-size: 70px;
-  }
-}
-
-@keyframes blur {
-  0% {
-    filter: blur(12px);
-  }
-  100% {
-    filter: blur(0px);
-  }
-}
-
-@keyframes popup {
-  0% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-    </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/plugins/slick.css">
+	<link rel="stylesheet" href="css/plugins/slick-theme.css">
+	<title></title>
 </head>
 <body>
-	<div class="vertical-container background" id="main">
-  <div class="vertical-body">
-    <div class="container">
-      <img src="logo-4flags.svg">
-      
-      <h2 class="title">Em manutenção</h2>
-      <br>
-      <p class="paragraph">Estamos trabalhando para deixar o site muito melhor e mais rápido para vocês.</p>
-      
-      <p class="paragraph">Mas não deixe de entrar em contato com a gente</p>
-      
-      <br>
-      
-      <hr class="line-white">
-      
-      <br>
-      <div class="section-contact">
-         <ul class="contact-list">
-           <li class="contact">
-             <span class="contact-info">contato@4flags.com.br</span>
-           </li>
-           <li class="contact">
-             <span class="contact-info">rh@4flags.com.br</span>
-           </li>
-        </ul>
-      </div>
-      
-      <br><br>
-      <div class="section-contavt-unitys">
-         <h4 class="title-unitys">Unidades</h4>
-        
-         <br>
-        <ul class="contact-list-unity">
-              <li class="contact-unity">
-                <h4 class="contact-title">São Bernardo</h4>
-                  
-             <span class="contact-email">saobernardo@4flags.com.br</span>
-                <span class="contact-telephone">
-                  11 98912-1313
-                </span>
-           </li>
-           <li class="contact-unity">
-                <h4 class="contact-title">São Caetano do sul</h4>
-                  
-             <span class="">saocaetano@4flags.com.br</span>
-                <span class="contact-telephone">
-                 11 94343-5066
-                </span>
-           </li>
-                <li class="contact-unity contact-personal-class">
-                <h4 class="contact-title">Outras unidades</h4>
-        
-                <span class="contact-telephone">
-                  11 99869-6511
-                </span>
-           </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+	<header class="site-header">
+		<h1><a href="http://www.4flags.com.br"><img src="images/logo-4flags.svg" alt="Four Flags"></a></h1>
+		<div class="toggle"> 
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		<nav class="nav site-nav">
+			<ul class="nav-list">
+				<li><a href="#">Sobre a Gente</a>
+					<ul class="nav-sub-list">
+						<li class="show-page" data-target="#sobre"><a href="#sobre">Sobre</a></li>
+						<li class="show-page" data-target="#missao"><a href="#missao">Missão</a></li>
+						<li class="show-page" data-target="#visao"><a href="#visao">Visão</a></li>
+						<li class="show-page" data-target="#valores"><a href="#valores">Valores</a></li>
+					</ul>
+				</li>
+				<li class="show-page" data-target="#metodologia"><a href="#metodologia">Metodologia</a></li>
+				<li class="show-page" data-target="#cursos"><a href="#cursos">Cursos</a></li>
+			</ul>
+		</nav>
+   </header>
 
+	<section class="main-banner">
+		<div class="center">
+			<div class="main-slider">
+				<div>
+					<img src="images/banner-1-4flags.png" alt="O idioma na ponta da língua">
+				</div>
+				<div>
+					<img src="images/banner-2-4flags.png" alt="O idioma na ponta da língua">
+				</div>
+				<div>
+					<img src="images/banner-3-4flags.png" alt="O idioma na ponta da língua">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section class="courses-home">
+		<div class="center">
+		<div class="container-title-home-courses">
+			<h2 class="title-home-courses">Inglês <br> <span>para</span> <br>todas as <br>idades</h2>
+		</div>
+		<div class="course-details-home">
+			<div class="banner-details-course-large">
+				<div class="slide-details-course-large">
+					<div class="img-course-adults">
+						<div class="details-icon-large" data-target="#cursos">
+							<img src="images/cursos/icon-course-adults.png" alt="">
+						</div>
+						<div class="details-description">
+							<p>
+								A 4flags GARANTE ou tenta garantir em contrato inglês avançado a partir de 18
+								meses! Isso mesmo, curso completo, do básico ao avançado,
+								em apenas 18 meses! Isso poderá ser comprovado pelo TOEIC, um dos
+								mais respeitados testes de proficiência do mundo. Garantimos
+								mínimo de 700 pontos.
+							</p>
+						</div>
+					</div>
+					
+					<div class="img-course-teens">
+						<div class="details-icon-large" data-target="#cursos">
+							<img src="images/cursos/icon-course-teens.png" alt="">
+						</div>
+						<div class="details-description">
+							<p>
+								Para adolescentes entre 10 e 14 anos. Inglês avançado em apenas 4
+								anos. O mais rápido e eficiente curso de inglês para esta faixa
+								etária. Acompanhamento pedagógico personalizado.<br>
+								Atividades extraclasse gratuitas e turmas reduzidas.<br>
+								Professores altamente qualificados.
+							</p>
+						</div>
+					</div>
+
+					<div class="img-course-kids">
+						<div class="details-icon-large" data-target="#cursos">
+							<img src="images/cursos/icon-course-kids.png" alt="">
+						</div>
+						<div class="details-description">
+							<p>
+								Para crianças de 7 a 9 anos. Metodologia desenvolvida para ensinar inglês
+								através de jogos, competições e outras atividades dinâmicas
+								em grupo, mantendo assim as crianças sempre motivadas e
+								interessadas. Para os alunos que iniciam no primeiro módulo
+								do KIDS, o tempo total até o avançado é de 6 anos.
+							</p>
+						</div>
+					</div>
+
+					<div class="img-course-little-kids">
+						<div class="details-icon-large" data-target="#cursos">
+							<img src="images/cursos/icon-course-little-kids.png" alt="">
+						</div>
+						<div class="details-description">
+							<p>
+								Para crianças de 3 a 6 anos. Metodologia desenvolvida para ensinar inglês de
+								maneira lúdica, desenvolvendo a compreensão e a
+								conversação por meio de atividades e histórias relacionadas ao
+								universo infantil. Até o avançado, para os alunos que iniciam no
+								primeiro módulo, a duração total é de 8 anos.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!--
+			<div class="banner-details-course-small">
+				<div class="slide-details-course-small">
+					<div>
+						<img src="images/cursos/icon-course-adults.png" class="img-course-small" data-index="1"> 
+					</div>
+					<div>
+						<img src="images/cursos/icon-course-teens.png" class="img-course-small" data-index="2">
+					</div>
+					<div>
+						<img src="images/cursos/icon-course-kids.png" class="img-course-small" data-index="3">
+					</div>
+					<div>
+						<img src="images/cursos/icon-course-little-kids.png" class="img-course-small" data-index="4">
+					</div>
+				</div>
+			</div>
+		-->
+		</div>
+		</div>
+	</section>
+
+	<section class="methodology-home">
+		<div class="center">
+		<div class="different-methodology">
+			<div class="methodology-flags">
+
+				<p class="text-different-methodology border-methodology">
+					<strong>Metodologia</strong> diferenciada
+					de ensino, <strong>turmas reduzidas</strong>
+					e <strong>professores</strong> com
+					vivência no <strong>exterior.</strong>
+				</p>
+
+				<a href="#metodologia" class="saiba-mais border-methodology show-page" data-target="#metodologia">Clique e saiba mais</a>
+
+			</div>
+		</div>
+ 
+
+               
+		<div class="learning-guarantee">
+			<div class="learning-guarantee-flags methodology-flags">
+				<div class="text-different-methodology border-methodology">
+					<h4>Garantia de aprendizado</h4>
+
+				<p>
+					A 4Flags acredita que é obrigação da escola fornecer instrução eficiente, assim como é direito dos alunos aplicados uma garantia real de ótimo aprendizado. Sendo assim, garantimos ao aluno, por contrato, DOMÍNIO no idioma estudado ao final do curso, que poderá ser comprovado por um teste de proficiência mundialmente reconhecido.
+				</p>
+
+				<p>
+					Garantimos que o aluno, ao final do curso, obterá pontuação mínima equivalente a nível avançado no teste de proficiência. Se o aluno não atingir o nível esperado, ele terá o direito de continuar estudando, gratuitamente, em uma de nossas turmas regulares, até atingir o objetivo.
+				</p>
+
+				<p>
+					Só uma escola que confia em sua metodologia pode oferecer uma garantia como essa.
+				</p>
+				
+				<p>
+					*Consulte regulamento de garantia. 
+				</p>
+				</div>
+
+				<a href="#" class="saiba-mais border-methodology show-page" data-target="#garantia">Clique e saiba mais</a>
+
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<section class="section-social">
+		<div class="center">
+		<div class="social social-facebook">
+			<div class="fb-page" data-href="https://www.facebook.com/Four-Flags-Language-Center-464011830624300/" data-width="500"><blockquote cite="https://www.facebook.com/Four-Flags-Language-Center-464011830624300/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Four-Flags-Language-Center-464011830624300/">Four Flags Language Center</a></blockquote></div>
+		</div>
+		<div class="social social-form">
+			<h3>Fale conosco</h3>
+			<p>Preencha os dados e em breve <br> entraremos em contato com você.</p>
+
+			<form action="" method="post" class="form-home">
+				<input type="text" name="nome" placeholder="Nome:" required>
+				<input type="tel" name="telefone" placeholder="Telefone:" required>
+				<input type="email" name="email" placeholder="E-mail:" required>
+				
+				<textarea name="mensagem" placeholder="Assunto:" required></textarea>
+				
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+		</div>
+	</section>
+
+<footer id="unidades" class="site-footer">
+		<div class="logo-footer">
+			<a href="4flags.com.br"><img src="images/logo-rodape.png"></a>
+		</div>
+		<div class="center">
+		<div class="section-footer about-footer">
+			<h5 class="title-section-rodape">Sobre a gente</h5>
+			<ul>
+				<li class="show-page" data-target="#sobre"><a href="#sobre">Sobre</a></li>
+				<li class="show-page" data-target="#missao"><a href="#missao">Missão</a></li>
+				<li class="show-page" data-target="#visao"><a href="#visao">Visão</a></li>
+				<li class="show-page" data-target="#valores"><a href="#valores">Valores</a></li>
+			</ul>
+		</div>
+
+		<div class="section-footer methodology-footer">
+			<h5 class="title-section-rodape">Metodologia</h5>
+			<ul>
+				<li class="show-page" data-target="#metodologia"><a href="javascript:void(0);">Conheça nosso<br>método</a></li>
+			</ul>
+		</div>
+
+		<div class="section-footer courses-footer">
+			<h5 class="title-section-rodape">Cursos</h5>
+			<ul>
+				<li class="show-page" data-target="#curso-de-ingles"><a href="javascript:void(0);">Inglês</a></li>
+				<li class="show-page" data-target="#curso-de-espanhol"><a href="javascript:void(0);">Espanhol</a></li>
+				<li class="show-page" data-target="#curso-de-frances"><a href="javascript:void(0);">Francês</a></li>
+				<li class="show-page" data-target="#curso-de-portugues"><a href="javascript:void(0);">Português</a></li>
+			</ul>
+		</div>
+		
+		<div class="section-footer contact-footer">
+			<h5 class="title-section-rodape">Contatos</h5>
+				<a href="mailto:contato@4flags.com.br">contato@4flags.com.br</a>
+				
+
+			<div class="section-unity">
+				<div class="unity-item">
+					<span class="unidade-name">São Paulo - Unidade Vila Mascote</span>
+					<span class="unidade-tel">5671-3030</span>
+					<span class="unidade-address">Avenida Mascote, 461 Vila Mascote - SP</span>
+				</div>
+
+				<div class="unity-item">
+					<span class="unidade-name">Unidade São Bernardo do Campo</span>
+					<span class="unidade-tel">4335-0909</span>
+					<span class="unidade-address">Rua João Pessoa, 681 - São bernardo do Campo</span>
+				</div>
+
+				<div class="unity-item">
+					<span class="unidade-name">Unidade São Caetano</span>
+					<span class="unidade-tel">4228-4046</span>
+					<span class="unidade-address">Avenida Vital Brasil Filho, 266 - São caetano do sul</span>
+				</div>
+			</div>  
+		</div>
+
+		<div class="section-footer job-footer">
+			<h5 class="title-section-rodape">Trabalhe conosco</h5>
+			<ul>
+				<li><a href="mailto:rh@4flags.com.br">rh@4flags.com.br</a></li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+
+<!-- Sobre --> 
+<section id="sobre" class="container-section">
+		<div class="container-close-section">
+			<a class="close-section _close-section" href="#">x</a>
+		</div>
+		<div class="section section-about">
+			<h2 class="title-section">Sobre a Gente</h2>
+
+			<p>
+				Saber um segundo idioma já não é mais diferencial, é requisito básico.
+			</p>
+			<p>
+				Foi pensando nisso que a 4 Flags desenvolveu uma <strong>metodologia de ensino eficiente e rápida, </strong> com
+				<strong>cursos específicos</strong> para cada faixa etária<br>
+				e profissionais com grande experiência no ensino de línguas.
+			</p>
+			<p>
+				Tudo para você aprender de verdade, com garantia de aprendizado em contrato.
+			</p>
+			<p>Seja bem-vindo à 4 Flags - Aqui o conhecimento é a nossa bandeira!</p>
+
+			<h3>4 Flags:</h3>
+
+			<p><strong>4 idiomas: </strong>inglês, espanhol, francês e <br> português para estrangeiros.</p><br>
+			<p><strong>4 faixas etárias: </strong>3 a 6 anos; 7 a 9 anos; 10 <br>a 14 anos e alunos a partir de 15 anos.</p><br>
+			<p><strong>4 pilares: </strong> excelência de ensino, respeito,<br> ética e garantia de aprendizado.</p><br><br>
+			<br><br>
+	    	<br><br>
+		</div>
+</section>
+
+<!-- Missão -->
+<section id="missao" class="container-section">
+	<div class="container-close-section">
+		<a class="close-section _close-section" href="#">x</a>
+	</div>
+	<div class="section section-mission">
+		<h2 class="title-section">Missão</h2>
+
+		<p>
+			Oferecer cursos de idiomas com 
+			garantia de qualidade,
+			respeito e ética, buscando <br>superar as 
+			expectativas de nossos clientes
+			e garantir total satisfação com os
+			 resultados gerados.
+		</p>
+		<br><br>
+	    <br><br>
+	    <br><br>
+	    <br><br>
+	</div>
+</section>
+
+<!-- Visão -->
+
+<section id="visao" class="container-section">
+	<div class="container-close-section">
+		<a class="close-section _close-section" href="#">x</a>
+	</div>
+	<div class="section section-vision">
+		<h2 class="title-section">Visão</h2>
+
+		<p>
+			Contribuir para o desenvolvimento
+			de um país mais justo<br>
+			através da responsabilidade social
+			e do desenvolvimento
+			pessoal e proﬁssional de nossos
+			 clientes e colaboradores.
+		</p>
+		<br><br>
+	    <br><br>
+	    <br><br>
+	    <br><br>
+	</div>
+</section>
+
+<!-- Valores -->
+
+<section id="valores" class="container-section">
+	<div class="container-close-section">
+		<a class="close-section _close-section" href="#">x</a>
+	</div>
+	<div class="section section-reputation">
+		<h2 class="title-section">Valores</h2>
+
+		<div class="reputation-items">
+			<div class="reputation-item respect">
+				<h3>Respeito</h3>
+				<p>
+				  Trate as pessoas como gostaria<br>
+				  de ser tratado, com imparcialidade,<br>
+				  sem distinção por gênero, raça,<br>
+				  opção religiosa, sexual ou ideológica.
+				</p>
+			</div>
+
+			<div class="reputation-item ethic">
+				<h3>Ética</h3>
+				<p>
+				  Faça somente aquilo pelo qual possa<br>
+				  se orgulhar. Faça somente o bem.
+				</p>
+			</div>
+
+			<div class="reputation-item discipline">
+				<h3>Disciplina</h3>
+				<p>
+				  Mantenha-se focado<br>
+				  em tudo aquilo que for necessário<br> 
+	              para atingir suas metas.
+				</p>
+			</div>
+
+			<div class="reputation-item Determination">
+				<h3>Determinação</h3>
+				<p>
+				  Permaneça ﬁrme em seus<br>
+				  objetivos. Mantenha a motivação<br>
+				  e siga em frente sempre.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="metodologia" class="container-section">
+	<div class="container-close-section">
+		<a class="close-section _close-section" href="#">x</a>
+	</div>
+	<div class="section section-methodology">
+		<h2 class="title-section">Metodologia</h2>
+
+		<p>
+			O principal diferencial da 4 Flags é a metodologia de ensino
+			voltada para a comunicação efetiva em um tempo muito menor que
+			os cursos tradicionais. Desde a primeira aula os nossos alunos 
+			vivenciam, na prática, situações do cotidiano, aprendendo de forma
+			integrada as quatro habilidades da língua: entender, falar, ler e escrever. 
+		</p>
+		
+		<div class="methodology-list">
+			<h3>Veja abaixo os diferenciais 4 Flags:</h3>
+
+			<ol>
+				<li>
+					<div class="methodology-item methodology-homogeneous-classes">
+						<h3>Turmas homogêneas</h3>
+						<p>
+							Nossos alunos são organizados em turmas reduzidas,
+							com mesma faixa etária e mesmo nível
+							de conhecimento no idioma estudado.
+						</p>
+					</div>
+				</li>
+				
+				<li>
+					<div class="methodology-item qualified-teacherss">
+						<h3>Professores qualificados</h3>
+						<p>
+							Para ser um professor 4 Flags, o profissional passa por diversos
+							testes teóricos e práticos que garantem a excelência de didática
+							e conhecimento. Além disso, todos os profissionais possuem
+							vivência no exterior e passam por treinamentos constantes.
+						</p>
+					</div>
+				</li>
+
+				
+				<li>
+					<div class="methodology-item teaching-resources">
+						<h3>Recursos de ensino</h3>
+						<p>
+							Nossa metodologia utiliza recursos digitais, auditivos e visuais,
+							que proporcionam mais facilidade no aprendizado dos novos
+							idiomas. A prática em aula é intensiva, fazendo nossos alunos
+							pensarem, de forma natural, na língua estudada.
+						</p>
+						<p>
+							- Plataforma com atividades e jogos interativos
+							  para praticar o idioma estudado.
+						</p>
+						<p>
+							- Esclarecimento de dúvidas por e-mail e Whatsapp.
+						</p>
+						<p>
+							- Atividades culturais extraclasse.
+						</p>
+						<p>
+							- Laboratório com computadores e biblioteca.
+						</p>
+						<p>
+							- Aulas extras de comunicação livre
+							às sextas-feiras (somente para o inglês).
+						</p>
+						<p>
+							- Bonus Class: aulas VIP de meia hora, onde o aluno
+							  poderá tirar dúvidas gerais do idioma, relacionadas
+							  ou não com o curso. Todo aluno tem direito de agendar
+							  até 1 Bonus Class por semana, de acordo com a planilha
+							  de horários disponíveis (somente para o inglês).
+						</p>
+					</div>
+				</li>
+				<!--
+				<li>
+					<div class="methodology-item learning-guarantee">
+						<h3>Garantia de aprendizado</h3>
+						<p>
+							A 4 Flags acredita que é obrigação da escola forncer instrução
+							eficiente, assim como é direito dos alunos aplicados uma garantia
+							real de ótimo aprendizado. Sendo assim, garantimos ao aluno,
+							por contrato, domínio no idioma estudado ao final do curso,
+							mundialmente reconhecido.
+						</p>
+						<p>
+							Se o aluno não atingir o nível esperado, ele terá o direito 
+							de continuar estudando gratuitamente em uma 
+							de nossas turmas regulares, até atingir o objetivo
+						</p>
+						<p>
+						 <strong>
+						 	Só uma escola que confia em sua metodologia
+						 	pode oferecer uma garantia como essa!
+						</strong>
+						</p>
+						<p>
+							A garantia é oferecida apenas ao aluno que:
+						</p>
+						<p>
+						 <strong>
+							- Fizer o curso completo da 4 Flags.
+						 </strong>
+						</p>
+						<p>
+						 <strong>
+							- Comparecer em, no mínimo, 85% das aulas.
+						 </strong>
+						</p>
+						<p>
+						 <strong>
+							- Atingir nota mínima de 8,5 em todas as avaliações.
+						 </strong>
+						</p>
+					</div>
+				</li>
+				-->
+			</ol>
+		</div>
+	</div>
+</section>
+
+<!-- Cursos -->
+
+<section id="cursos" class="container-section container-courses">
+	<div class="container-close-section">
+		<a class="close-section" href="#">x</a>
+	</div>
+	<div class="section section-course">
+		<h2 class="title-section">Nossos cursos</h2>
+		
+		<div class="courses-icon-section">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" class="show-page" data-target="#curso-de-ingles">
+					<figure>
+						<img src="images/cursos/icon-course-english.png" alt="Icon Course English">
+						<figcaption>
+							<h4>Inglês</h4>
+						</figcaption>
+					</figure>
+					</a>
+				</li>
+
+				<li>
+					<a href="javascript:void(0);" class="show-page" data-target="#curso-de-espanhol">
+					<figure>
+						<img src="images/cursos/icon-course-espanhol.png" alt="Icon Course English">
+						<figcaption>
+							<h4>Espanhol</h4>
+						</figcaption>
+					</figure>
+					</a>
+				</li>
+
+				<li>
+					<a href="javascript:void(0);" class="show-page" data-target="#curso-de-frances">
+					<figure>
+						<img src="images/cursos/icon-course-frances.png" alt="Icon Course English">
+						<figcaption>
+							<h4>Francês</h4>
+						</figcaption>
+					</figure>
+					</a>
+				</li>
+
+				<li>
+					<a href="javascript:void(0);" class="show-page" data-target="#curso-de-portugues">
+					<figure>
+						<img src="images/cursos/icon-course-portugues.png" alt="Icon Course English">
+						<figcaption>
+							<h4>Português</h4>
+						</figcaption>
+					</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>	
+
+<!-- Curso espanhol -->
+
+<section id="curso-de-espanhol" class="container-section container-course">
+	<div class="container-close-section">
+		<a class="close-section" href="#">x</a>
+	</div>
+	<div class="box-container-course box-container-course-spanish">
+		<h2 class="title-course-section title-course-spanish">Espanhol</h2>
+		<div class="section section-course section-course-spanish">
+			<div class="courses course-spanish">
+				<p>
+					O curso de espanhol foi elaborado para proporcionar um aprendizado efetivo da língua e 
+					cultura espanholas.
+				</p>
+				<p>
+					A duração do curso é de 3 anos, sendo obtidos os seguintes níveis de proﬁciência ao ﬁnal de 
+					cada ano:
+ 				</p>
+
+ 				<ol>
+					<li>1º Ano => Atinge-se o nível de proﬁciência A2 do CEF (Quadro Comum Europeu)</li>
+					<li>2º Ano => Atinge-se o nível de proﬁciência B1 do CEF (Quadro Comum Europeu)</li>
+					<li>3º Ano => Atinge-se o nível de proﬁciência B2 do CEF (Quadro Comum Europeu)</li>
+ 				</ol>
+
+ 				<p>
+ 					Material didático para o ensino da língua espanhola, o <em><em>Vente</em></em> se estrutura em seções que 
+					facilitam o processo de aprendizagem do aluno.
+				</p>
+
+				<p>
+					<strong>
+					Secciones A y B: contendo diálogos que exempliﬁcam a língua, atividades de compreensão e 
+					dinâmicas de interação.
+					</strong>
+				</p>
+
+				<p>
+				<strong>
+					Sección C y Pronunciación y Ortograﬁa: contendo elementos linguísticos e noções de fonética.
+				</strong>
+				</p>
+
+				<p>
+				<strong>
+					Amplía tu vocabulario: contendo atividades que ampliam e consolidam o léxico. 
+				</strong>
+				</p>
+
+				<p>
+				<strong>
+					Contenidos gramaticales: exercícios para a prática especíﬁca de conteúdos gramaticais. 
+				</strong>
+				</p>
+
+				<p>
+				<strong>
+					Actividades: destina-se a prática e produção livre dos conteúdos estudados na unidade.
+				</strong>
+				</p>
+				
+				<p>
+				<strong>
+					Descubriendo: informações culturais sobre as civilizações espanholas e hispanoamérica.
+				</strong>
+				</p>
+
+				<p>
+				<strong>
+					Internet: atividades extras.
+				</strong>
+				</p>
+				
+				<p>
+					Cada unidade ﬁnaliza com informações e conteúdos culturais e atividades de compreensão e contrastes 
+					interculturais.
+				</p>
+
+				<p>
+					Te presentamos <em>Vente</em> un manual moderno e interactivo con claridad y sencillez 
+					metodológicas propias.
+				</p>
+
+				<p>
+					<em>Vente</em> pretende ser una herramienta cómoda y eﬁcaz para enseñar, aprender y disfrutar del 
+					español en el aula.
+				</p>
+
+				<p>
+					Cabe destacar su: calidad de la secuencia didáctica; facilidad de utilización; progresión 
+					realista; trabajo sistemático de la gramática; plataforma; multidispositivo.
+				</p>
+
+				<p>
+					El mundo digital de <em>Vente</em> se compone:
+				</p>
+
+				<ul>
+					<li>- Libro digitalizado on-line legible en cualquier soporte.</li>
+					<li>- Material complementario en "Zona estudiante".
+					<li>- Multiplataforma: "tu aula virtual" visible en cualquier dispositivo (PC, Mac, tablets Android, iPad, Smarphone).
+					</li>
+				</ul>
+
+				<h4>Vente 1:</h4>
+				<p>
+					Estructurado en torno a 14 unidades. Dispone de una plataforma virtual donde tus 
+					estudiantes pueden trabajar de manera autónoma o llevar el seguimiento de su trabajo a 
+					través de la creación de grupos. Cubre los contenidos de A1 y A2+ deﬁnidos en los Niveles de 
+					referencia para el español según las recomendaciones del Marco común de referencia para 
+					las lenguas: aprendizaje, enseñanza y evaluación.
+				</p>
+
+				<h4>Vente 2:</h4>
+				<p>
+					Estructurado en torno a 14 unidades para faclitarles la tarea a los usuarios que necesiten 
+					trabajar el libro en dos fases, cubre los contenidos de B1 y B1+ deﬁnidos en los Niveles de 
+					referencia para el español según las recomendaciones del Marco común de referencia para 
+					las lenguas: aprendizaje, enseñanza y evaluación.
+				</p>
+
+				<h4>Vente 3:</h4>
+				<p>
+					Estructurado en 12 unidades para facilitarles la tarea a los usuarios que necesiten trabajar el 
+					libro en dos fases. Cubre los contenidos de B2 deﬁnidos en los Niveles de referencia para el 
+					español según las recomendaciones del Marco común europeo de referencia para las 
+					lenguas: aprendizaje, enseñanza, evaluación.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+<!-- Curso frances -->
+
+<section id="curso-de-frances" class="container-section container-course">
+	<div class="container-close-section">
+		<a class="close-section" href="#">x</a>
+	</div>
+	<div class="box-container-course box-container-course-french">
+		<h2 class="title-course-section title-course-french">Francês</h2>
+		<div class="section section-course section-course-french">
+			<div class="courses course-french">
+				<p>
+					O curso de francês foi elaborado para proporcionar um aprendizado efetivo da língua e 
+					cultura francesas.
+				</p>
+				<p>
+					A duração do curso é de 4 anos, sendo obtidos os seguintes níveis de proﬁciência ao ﬁnal de 
+					cada ano:
+ 				</p>
+
+ 				<ol>
+					<li>1º Ano => Atinge-se o nível de proﬁciência A1/A2 do CEF (Quadro Comum Europeu)</li>
+					<li>2º Ano => Atinge-se o nível de proﬁciência A2/B1 do CEF (Quadro Comum Europeu)</li>
+					<li>3º Ano => Atinge-se o nível de proﬁciência B1 do CEF (Quadro Comum Europeu)</li>
+					<li>4º Ano => Atinge-se o nível de proﬁciência B2 do CEF (Quadro Comum Europeu)</li>
+ 				</ol>
+
+ 				<p>
+ 					Tout va bien ! est une nouvelle méthode qui propose une démarche très structurée et solide et 
+					qui s'appuie sur une compétence de communication générale.
+				</p>
+
+				<p>
+					Tout va bien ! propose:
+				</p>
+
+				<p>
+					Des supports et des situations de communication authentiques ou proches de l'authentique,
+					permettant à l'élève de se sensibiliser aux différents registres et de découvrir certains aspects 
+					de la culture francophone tout autant que la langue.  
+				</p>
+
+				<p>
+					De très nombreuses activités visant l'acquisition des quatre compétences de communication
+					et l'utilisation de stratégies spéciﬁques. 
+				</p>
+
+				<p>
+					Un travail sur la grammaire et le vocabulaire associés aux situations et au service de la 
+					communication faisant une large place à l'observation et à la réflexion Une invitation régulière
+					à l'évaluation, au travail en autonomie et à l'auto-évaluation. 
+				</p>
+
+				
+
+				<h4>Tout va bien! 1</h4>
+				<ul>
+					<li>Niveaux: A1, A2,Débutants</li>
+					<li>Public: Adultes-Grands adolescents 16-18 ans</li>
+				</ul>
+				
+				<p>
+					<strong>Tout va bien! 1</strong> dont les objectifs respectent scrupuleusement les recommandations du CECR propose également un portfolio inclus dans le livrze de l'élève. L'ouvrage s'organise en 6 unités de 2 leçons chacune qui comprennent les rubriques suivantes:
+				</p>
+
+				<ul>
+					<li>Situations (2 pages de situations de communication)</li>
+					<li>Grammaire (2 pages) </li>
+					<li>Lexique / Prononciation (1 page)</li>
+					<li>Civilisation française et francophone (1 page)</li>
+					<li>Compétences (écouter, parler, lire, écrire) </li>
+					<li>Evaluation (1 page)</li>
+				</ul>
+				
+				<p><strong>Tout va bien! 1</strong>est prévu pour un enseignement de 120 à 150 heures de cours. Il vise 
+					l'acquisition d'une compétence de communication minimal en français. Les étapes sont clairement déﬁnies. L'apprenant pourra se situer dans son apprentissage et acquérir une autonomie progressive: une récapitulation et un bilan sont à faire aprés chaque unité. Il disposer aussi toutes les deux unités d'une activité spéciﬁque qui leur permettra de faire le point. Le portfolio et le passeport qui accompagnent le livre de l'élève servent à l'apprenant à: prendre conscience de son parcours individuel par compétences; attester de son proﬁl insiste particulièrement sur l'acquisition d'une compétence de communication en français. Elle propose un travail rigoureux et systématique qui porte soit sur une compétence isolée, soit sur plusieurs simultanément. Par ce travail, l'apprenant crée ses propores stratégies de compréhension et d'expression. 
+				</p>
+
+				<h4>Tout va bien! 2</h4>
+
+				<ul>
+					<li>Niveaux:  A2, B1, Intermédiaire</li>
+					<li>Public: Adultes - Grands adolescents 16-18 ans</li>
+				</ul>
+
+				<p><strong>Tout va bien! 2</strong> poursuit la progression amorcée au niveau débutant. La méthode propose un travail rigoureux qui porte soit sur une compétence isolée, soit sur plusieurs simultanément. Systématiquement, l'apprenant est conduit à développer ses propres stratégies de réception et de production. A ce niveau, la langue écrite devient de plus en plus importante et les médias (radio et presse) apparaissent comme des supports récurrents.
+				</p>
+
+				<p><strong>Tout va bien! 2</strong> dont les objectifs respectent scrupuleusement les recommandations du CECR propose également un portfolio inclus dans le livre. Le protfolio se veut:
+				</p>
+
+				<ul>
+					<li>un instrument d'auto-évaluation permanente;</li>
+					<li>un outil d'apprentissage;</li>
+					<li>le témoin des progrès de l'apprenant.</li>
+					<li>L'ouvrage s'organise en 6 unités de 2 leçons chacune qui comprennent les rubriques suivantes </li>
+					<li>: Situations (2 pages de situations de communication)</li>
+					<li>Grammaire (2 pages) (en situation et en découverte guidée, avec exercices)</li>
+					<li>Lexique / Prononciation (2 pages) </li>
+					<li>Civilisation (2 pages)</li>
+					<li>Compétences (écouter, parler, lire, écrire) (4 pages)</li>
+					<li>Evaluation (1 page).</li>
+				</ul>
+
+				<p>
+					L'ensemble pédagogique Tout va bien ! 2est prévu pour un enseignement de 120 à 150 heures 
+					de cours. Il vise l'acquisition d'une compétence de communication d'un niveau intermédiaire.
+					Les objectifs et contenus répondent en particulier aux besoins langagiers - tant écrits qu'oraux 
+					- d'une personne ayant des contacts suivis avec des natifs (par exemple, au cours d'un séjour
+					professionnel ou touristique en territoire francophone). L'apprenant pourra se situer dans son 
+					apprentissage et acquérir une autonomie progressive: une récapitulation et un bilan sont à faire
+					après chaque unité. Il disposera aussi toutes les deux unités d'une activité spéciﬁque qui
+					permettra de faire le point.
+				</p>
+
+				<h4>Tout va bien! 3</h4>
+
+				<ul>
+					<li>Niveaux:  Avancé, B1, Intermédiaire</li>
+					<li>Public:  Adultes - Grands adolescents 16-18 ans</li>
+				</ul>
+
+				<p><strong>Tout va bien! 3</strong> dont les objectifs respectent scrupuleusement les recommandations du CECR propose également un portfolio inclus dans le livre de l'élève pour atteindre le niveau B2.
+				La méthode propose un travail rigoureux et systématique qui porte soit sur une compétence isolée, soit sur plusieurs simultanément. Par ce travail, l'apprenant crée ses propres stratégies de compréhension et d'expression. La diversité des stratégies et des modes d'apprentissage sont largement pris en compte dans la méthode avec des rubriques spéciﬁques au long des activités.
+				</p>
+
+				<p><strong>Tout va bien! 3</strong> poursuit systématiquement la progression amorcée dans Tout va bien! 1 et 2. 
+				La méthode propose un travail rigoureux et régulier qui porte soit sur une compétence isolée soit sur plusieurs simultanément. La langue écrite acquiert un rôle très important et les médias (radio et presse) sont des supports récurrents. Grâce à ses supports, l'apprenant peut développer ses propres stratégies de compréhension et d'expression.
+				Le portfolio inclus comporte trois parties : la biographie personnelle, le diagnostic linguistique, ainsi que les bilans-communication de la méthode. Il sert à: <br>prendre conscience des son parcours individuel parcompétences; attester son proﬁl linguistique.
+				</p>
+
+				<h4>Tout va bien! 4 </h4>
+
+				<ul>
+					<li>Niveaux:  Avancé, B2, Perfectionnement</li>
+					<li>Public:  Adultes - Grands adolescents 16-18 ans</li>
+				</ul>
+
+				<p>
+					<strong>
+						Tout va bien ! 4 est une méthode de français destinée aux grands adolescents et adultes 
+						ayant atteint un niveau intermédiaire équivalent au niveau B1 et visant le niveau B2 du Cadre 
+						européen commun de référence pour les langues (CECR).
+					</strong>
+				</p>
+
+				<p>
+					Les objectifs de Tout va bien ! 4 respectent scrupuleusement les recommandations du CECR,
+					comme en témoigne le Portfolio qui accompagne le livre de l'élève. 
+				</p>
+
+				<p>
+					Tout va bien ! 4 propose :
+				</p>
+
+				<p>
+					- Des supports de communication authentiques riches et variés, qui permettront à l'apprenant 
+					d'appréhender et de manier la langue dans tous ses registres, tout en élargissant sa 
+					connaissance de la culture francophone.
+				</p>
+
+				<p>
+					- De très nombreuses activités destinées à développer les quatre compétences de communication et à utiliser des stratégies spéciﬁques.
+				</p>
+
+				<p>
+					- Un travail sur la grammaire et le vocabulaire, qui reprend et approfondit l'étude de la langue liées aux intentions de communication en s'attachant aux nuances ; une étude des registres et divers aspects stylistiques incluant une ouverture sur les langues de spécialités.
+				</p>
+
+				<p>
+					- Des évaluations et des auto-évaluations régulières reposant sur les critères de l'examen DELF 
+					B2, toujours accompagnées d'une reflexion personnelle qui conduit à l'autonomie.
+				</p>
+
+				<p>
+					- Un portfolio intégré qui comprend notamment des ﬁches de stratégies d'apprentissage pour 
+					l'étudiant. Le niveau 4 de Tout va bien ! couvre les contenus du niveau B2 du CECR.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+<!-- Curso de português -->
+
+<section id="curso-de-portugues" class="container-section container-course">
+	<div class="container-close-section">
+		<a class="close-section" href="#">x</a>
+	</div>
+	<div class="box-container-course box-container-course-portuguese">
+		<h2 class="title-course-section title-course-portuguese">Português</h2>
+		<div class="section section-course section-course-portuguese">
+			<div class="courses course-portuguese">
+				<p>
+					Devido ao grande número de estrangeiros que vivem no Brasil,
+					criamos o curso de português para estrangeiros que tenham 
+					como língua materna o inglês, espanhol e francês.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<!-- Curso de inglês -->
+
+<section id="curso-de-ingles" class="container-section container-course">
+	<div class="container-close-section">
+		<a class="close-section" href="#">x</a>
+	</div>
+	<div class="box-container-course box-container-course-english">
+		<h2 class="title-course-section title-course-english">Inglês</h2>
+		<div class="section section-course section-course-english">
+		
+		
+		<div class="courses course-english">
+			<div class="course-details">
+				<ul class="course-type-list course-type-list-english">
+					<li>
+						<div class="course-icon">
+							<img src="images/cursos/icon-course-adults.png" alt="Ícone curso para adultos">
+						</div>
+						<div class="course-description">
+							<p>
+								<strong>A partir de 15 anos.</strong> Do básico ao avançado em 6 módulos.
+							</p>
+							<p>
+								<strong>Duração:</strong> 6 semestres letivos, com 2 horas semanais, ou 3 semestres letivos, com 4 horas semanais. Ou seja, em
+								apenas 18 meses é possível fazer o curso completo, do básico
+								ao avançado, com garantia de aprendizado em contrato,
+								comprovada pelo TOEIC<br>(garantia mínima de 700 pontos).
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="course-icon">
+							<img src="images/cursos/icon-course-teens.png" alt="Ícone curso para adultos">
+						</div>
+						<div class="course-description">
+							<p>
+								Ritmo ideal para pré-adolescentes e adolescentes que iniciam
+								o curso com <strong>idades entre 10 e 14 anos.</strong> O curso é composto
+								de 8 módulos<br>(4 anos), do básico ao avançado.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="course-icon">
+							<img src="images/cursos/icon-course-kids.png" alt="Ícone curso para adultos">
+						</div>
+						<div class="course-description">
+							<p>
+								Indicado para crianças que iniciam o curso com <strong>idades entre
+								7 e 9 anos.</strong> Desenvolvido para ensinar inglês através de jogos,
+								competições e outras atividades dinâmicas em grupo, mantendo
+								assim as crianças sempre motivadas e interessadas.
+							</p>
+							<p>
+								Para os alunos que iniciam no primeiro módulo do KIDS,
+								o tempo total até o avançado é de 6 anos.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="course-icon">
+							<img src="images/cursos/icon-course-little-kids.png" alt="Ícone curso para adultos">
+						</div>
+						<div class="course-description">
+							<p>
+								Indicado para crianças que iniciam o curso com <strong>idades entre 
+								3 e 6 anos.</strong> Desenvolvido para ensinar inglês de maneira lúdica,
+								desenvolvendo a compreensão e a conversação por meio
+								de atividades e histórias relacionadas ao universo infantil.
+							</p>
+							<p>
+								Para alunos que iniciam no primeiro módulo do LITTLE KIDS,
+								o tempo total até o avançado é de 8 anos.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+		</div>
+	</div>
+</section>	
+
+<div id="fb-root" ></div>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+  			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106736054-1"></script>
 <script>
-async function getStaticProps() {
-
-  const response = await fetch('https://api.github.com/users/evertonl1ma');
-  const data = await response.json();
-
- console.log(data)
-}
-
-getStaticProps();
-  </script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-106736054-1');
+</script>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

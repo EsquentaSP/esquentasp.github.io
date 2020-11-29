@@ -1,0 +1,44 @@
+/*
+Error: Inconsistent indentation: "      \t\t\t\t\t" was used for indentation, but the rest of the document was indented using 1 tab.
+        on line 25 of sass/pages/contato.sass
+
+20: 				h2
+21: 					text-align: right
+22: 					color: #4a4d5c
+23: 					font-size: 28px
+24: 					&:before
+25:       					content: url("../images/flags.svg")
+26:       					margin-bottom: 15px
+27:       					display: block
+28: 
+29: 
+30: 			form
+
+Backtrace:
+sass/pages/contato.sass:25
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each_with_index'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `tabulate'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:417:in `_to_tree'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: \"      \t\t\t\t\t\" was used for indentation, but the rest of the document was indented using 1 tab.\A         on line 25 of sass/pages/contato.sass\A \A 20: 				h2\A 21: 					text-align: right\A 22: 					color: #4a4d5c\A 23: 					font-size: 28px\A 24: 					&:before\A 25:       					content: url(\"../images/flags.svg\")\A 26:       					margin-bottom: 15px\A 27:       					display: block\A 28: \A 29: \A 30: 			form"; }

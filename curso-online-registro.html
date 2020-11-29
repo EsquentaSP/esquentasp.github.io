@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>4Flags Curso Online</title> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+	<div class="container-course">
+		<div class="center">
+			<header class="header-course clearfix"> 
+			<div class="header-course-left">
+				<div class="course-online-title">
+					<h2 class="course-online-item-title">
+						Cursos
+					<span>On-Line</span>
+					</h2>
+				</div>
+
+				<div class="course-online-subtitle">
+					<h3 class="course-online-item-subtitle">
+						Curso completo, <br>
+						do básico ao avançado,<br>
+						em 4 módulos interativos.
+					</h3>
+				</div>
+			</div>
+			<div class="header-course-right">
+				<div class="course-online-title-now">
+					<h4 class="course-online-item-title-now">
+						Faça sua matrícula<br>
+						e comece  a estudar<br>
+						agora mesmo
+					</h4>
+				</div>
+			</div>
+		</header>
+
+		<div class="body-course clearfix">
+			<div class="body-text">
+				<div class="contact-form-item">
+					<form action="envia-contato.php" method="post">
+						<div class="input-form">
+							<select class="input-full" name="unidades" data-js="input" placeholder="Unidades" required>
+								<option value="">Pólo de apoio</option>
+								<option value="contato@4flags.com.br">Vila mascote</option>
+								<option value="saobernardo@4flags.com.br">São Bernardo do Campo</option>
+								<option value="saocaetano@4flags.com.br">São Caetano</option>
+							</select>
+						</div>
+						
+						<div class="input-form">
+							<input class="input-full" type="text" name="nome" data-js="input" placeholder="Nome">
+						</div>
+
+						<div class="input-form">
+							<input class="input-full" type="email" name="email" data-js="input" placeholder="E-mail">
+						</div>
+
+						<div class="input-form">
+							<input class="input-full" type="text" name="nascimento" data-js="input" placeholder="Nascimento">
+						</div>
+
+						<div class="input-form">
+							<input class="input-md" type="text" name="rg" data-js="input" placeholder="RG">
+							<input class="input-md" type="text" name="cpf" data-js="input" placeholder="CPF">
+						</div>
+
+						<div class="input-form">
+							<input class="input-full" type="text" name="Endereco" data-js="input" placeholder="Endereço">
+						</div>
+						
+						<div class="input-form">
+							<input class="input-full" type="text" name="complemento" data-js="input" placeholder="Complemento">
+						</div>
+						
+						<div class="input-form">
+							<input class="input-md" type="text" name="celular" data-js="input" placeholder="Celular">
+							<input class="input-md" type="text" name="Skype" data-js="input" placeholder="Skype">
+						</div>
+						
+						<input type="checkbox" name="termo">Aceito os termos de serviço
+						<input type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+		</div>
+
+			<div class="footer-course">
+	           <div class="footer-course-left">
+					<h5>Pólos de apoio</h5>
+					<ul class="footer-course-list">
+						<li>São Paulo - Av. Mascote, 461 - Vila Mascote | 5671-3030</li>
+						<li>São Caetano do Sul - Av. Vital Brasil Filho, 266 - Osvaldo Cruz | 4228 - 4046</li>
+						<li>São Bernardo do Campo - Rua João Pessoa, 681 - Centro | 4335 - 0909</li>
+					</ul>
+	           </div>
+
+	           <div class="footer-course-right">
+					<a href="curso-online-registro.html" class="btn btn-href btn-center">Pagamento</a>
+	           </div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	var inputs = document.querySelectorAll('[data-js]');
+
+	inputs.forEach(function(input) {
+		input.addEventListener('focus', function(evt) {
+			evt.target.parentElement.style.borderColor = 'blue';
+		})
+	})
+
+	inputs.forEach(function(input) {
+		input.addEventListener('blur', function(evt) {
+			evt.target.parentElement.style.borderColor = '#5b5439';
+		})
+	})
+	</script>
+</body>
+</html>
