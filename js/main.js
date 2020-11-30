@@ -38,11 +38,11 @@
 				var ids = ["#acontece-na-4flags", "#dicas"];
 
 				
-				ids.forEach(function(_id) {
+				/*ids.forEach(function(_id) {
 					if($body.scrollTop > document.querySelector(_id).offsetTop && $body.scrollTop <= (document.querySelector(_id).offsetTop + document.querySelector(_id).clientHeight)) {
 						pushHistory(_id);
 					}
-				});
+				});*/
 
 				
 			}
@@ -50,7 +50,7 @@
 			window.document.addEventListener("scroll", function() {
     			  if($body.scrollTop > header.clientHeight) {
           				header.style.position = "fixed";
-    				} else {
+    				} else { 
          				header.style.position = "static";
     				}
 				 });
@@ -237,3 +237,26 @@
 
 });
 
+	function sendMail(evt) {
+ 		//alert('aa')
+ 		evt.preventDefault();
+ 		const form = document.querySelector('#form');
+ 		const name = document.querySelector('#name').value;
+ 		const message = document.querySelector('#msg').value;
+ 		const telephone = document.querySelector('#telephone').value;
+ 		const email = document.querySelector('#email').value;
+
+ 		console.log(name)
+
+ 		  fetch('https://localhost:3000/send', {
+    method: 'post',
+    body: {name}
+  }).then(function(response) {
+  	console.log('response', response)
+    return response.json();
+  }).then(function(data) {
+    console.log('data', data)
+  });
+ 	}
+
+ 	document.querySelector('#testebth').addEventListener('click', sendMail)
